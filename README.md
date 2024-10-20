@@ -2,15 +2,14 @@
 > یک کتابخانه پایتون که از API ایتا استفاده می کند.
 
 ``` python
-import asyncio
 from pyeitaa import Client
 
 client = Client('My_session','Token')
 
-async def hello():
-    await client.send_message(me,'سلام')
+def hello():
+    client.send_message(me,'سلام')
 
-asyncio.run(hello())
+hello()
 ```
 
 یک کتابخانه جدید و کاربردی در ساخت ربات های ایتا
